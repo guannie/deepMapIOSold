@@ -1,0 +1,18 @@
+
+## Build generated
+build/
+DerivedData/
+
+## Podfiles
+Pods/
+BuddyTracking.xcworkspace
+
+## Various settings
+xcuserdata/
+*.xcuserstate
+
+firebaseServer/
+DeepMap.zip
+DeepMapTestIOS/HDMMapCore.framework
+HDMMapCore.framework
+Gimbal.framework

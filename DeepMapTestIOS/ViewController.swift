@@ -66,7 +66,7 @@ class ViewController: HDMMapViewController, HDMMapViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mapView.switchStyles(Bundle.main.path(forResource: "custom", ofType: "mapStyle"), ruleFile: Bundle.main.path(forResource: "custom", ofType: "mapRule"));
+//        self.mapView.switchStyles(Bundle.main.path(forResource: "custom", ofType: "mapStyle"), ruleFile: Bundle.main.path(forResource: "custom", ofType: "mapRule"));
                 self.delegate = self
         
                 let switchToggle = UISwitch(frame: CGRect(origin:CGPoint(x:0.0, y:0.0), size:CGSize(width:100.0,height:10.0) ) );
@@ -76,13 +76,27 @@ class ViewController: HDMMapViewController, HDMMapViewControllerDelegate {
                                                             y: self.view.frame.size.height - switchToggle.frame.size.height),
                                             size:   CGSize(width:switchToggle.frame.size.width, height:switchToggle.frame.size.height));
         
-                switchToggle.addTarget(self, action: #selector(flip(sender:)), for: .valueChanged);
-                switchToggle.setOn(true, animated: true);
+                switchToggle.addTarget(self, action: #selector(test(sender:)), for: .valueChanged)
+//                switchToggle.addTarget(self, action: #selector(flip(sender:)), for: .valueChanged);
+//                switchToggle.setOn(true, animated: true);
+        
+        
                 self.view.addSubview(switchToggle);
         
         
     }
     
+    @objc func test(sender: UISwitch!) {
+        if(sender.isOn == false)
+        {
+            self.mapView.set3DMode(true, animated: true)
+        }
+        else
+        {
+            self.mapView.set3DMode(false, animated: true)
+        }
+
+    }
     
     func flip(sender: UISwitch!){
         

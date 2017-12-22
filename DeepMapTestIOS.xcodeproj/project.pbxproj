@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8ECE5EBD1F6187C7009DB99C /* HDMMapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE5EBC1F6187C7009DB99C /* HDMMapCore.framework */; };
-		8ECE5EBE1F6187C7009DB99C /* HDMMapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECE5EBC1F6187C7009DB99C /* HDMMapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E2BD49F1F6FDB8B0027F475 /* HDMMapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2BD49E1F6FDB8B0027F475 /* HDMMapCore.framework */; };
+		8E2BD4A01F6FDB8B0027F475 /* HDMMapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2BD49E1F6FDB8B0027F475 /* HDMMapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8EDBACFA1F5F063200D8857E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBACF91F5F063200D8857E /* AppDelegate.swift */; };
 		8EDBACFC1F5F063200D8857E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBACFB1F5F063200D8857E /* ViewController.swift */; };
 		8EDBACFF1F5F063200D8857E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBACFD1F5F063200D8857E /* Main.storyboard */; };
@@ -29,13 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8ECE5EBF1F6187C7009DB99C /* Embed Frameworks */ = {
+		8E2BD4A11F6FDB8B0027F475 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8ECE5EBE1F6187C7009DB99C /* HDMMapCore.framework in Embed Frameworks */,
+				8E2BD4A01F6FDB8B0027F475 /* HDMMapCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8ECE5EBC1F6187C7009DB99C /* HDMMapCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDMMapCore.framework; sourceTree = "<group>"; };
+		8E2BD49E1F6FDB8B0027F475 /* HDMMapCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDMMapCore.framework; sourceTree = "<group>"; };
 		8EDBACF61F5F063200D8857E /* DeepMapTestIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepMapTestIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDBACF91F5F063200D8857E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDBACFB1F5F063200D8857E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ECE5EBD1F6187C7009DB99C /* HDMMapCore.framework in Frameworks */,
+				8E2BD49F1F6FDB8B0027F475 /* HDMMapCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 		8EDBACED1F5F063200D8857E = {
 			isa = PBXGroup;
 			children = (
-				8ECE5EBC1F6187C7009DB99C /* HDMMapCore.framework */,
+				8E2BD49E1F6FDB8B0027F475 /* HDMMapCore.framework */,
 				8EDBACF81F5F063200D8857E /* DeepMapTestIOS */,
 				8EDBAD0D1F5F063200D8857E /* DeepMapTestIOSTests */,
 				8EDBACF71F5F063200D8857E /* Products */,
@@ -128,7 +128,7 @@
 				8EDBACF21F5F063200D8857E /* Sources */,
 				8EDBACF31F5F063200D8857E /* Frameworks */,
 				8EDBACF41F5F063200D8857E /* Resources */,
-				8ECE5EBF1F6187C7009DB99C /* Embed Frameworks */,
+				8E2BD4A11F6FDB8B0027F475 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,7 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lkuanxin.FoodTracker.DeepMapTestIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -392,7 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lkuanxin.FoodTracker.DeepMapTestIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
